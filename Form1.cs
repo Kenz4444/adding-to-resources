@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace Topic_10
 {
-    public partial class Form1 : Form
+    public partial class FormAddResources : Form
     {
-        public Form1()
+        public FormAddResources()
         {
             InitializeComponent();
+        }
+
+        private void imgMario_Click(object sender, EventArgs e)
+        {
+            imgMario.Image = Properties.Resources.mario2;
+            imgimage3.Visible = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            imgMario.Image = Properties.Resources.mario1;
         }
     }
 }
